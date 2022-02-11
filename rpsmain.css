@@ -1,0 +1,159 @@
+body{
+	background-color: #282a36;
+	font-family: 'Roboto', sans-serif;
+	color:#f5f6fa;
+}
+
+.instructions{
+	text-align: center;
+	transition: 0.2s;
+    background-color: #44475a;
+    border: 2px solid #ff5555;
+	margin-bottom: 2px;
+	color:#8be9fd;
+}
+
+.instructions:hover{
+	transition: 0.2s;
+    background-color:#282a36;
+    border: 2px solid #ff79c6;
+}
+
+.sideS{
+	display: grid;
+	grid-template-columns: repeat(2, 50%);
+}
+
+.leftSide{
+	border: 2px solid #ff5555; ;
+}
+
+.yourPickDiv{
+	text-align: center;
+	transition: 0.2s;
+    background-color: #44475a;
+    border: 2px solid #ff5555;
+    margin-bottom: 2px;
+}
+
+.yourPickDiv:hover{
+	transition: 0.2s;
+    background-color:#282a36;
+    border: 2px solid #ff79c6;
+}
+
+.pickOptions h2{
+	display: inline-block;
+	padding: 24px;
+}
+
+
+#rockText{
+	text-align: center;
+    background-color: #44475a;
+    border: 2px solid #ff5555;
+	font-size: 35px;
+	cursor: pointer;
+	
+}
+
+#paperText{
+	margin-left:4px;
+	margin-right:4px;
+	text-align: center;
+    background-color: #44475a;
+    border: 2px solid #ff5555;
+	font-size: 35px;
+	cursor: pointer;
+}
+
+#scissorsText{
+	text-align: center;
+    background-color: #44475a;
+    border: 2px solid #ff5555;
+	font-size: 35px;
+	cursor: pointer;
+}
+
+.pickResult{
+	text-align: center;
+    background-color: #44475a;
+    border: 2px solid #ff5555;
+	font-size: 35px;
+	height: 200px;
+	margin: 10px;
+}
+
+.rightSide{
+	border: 2px solid #ff5555; ;
+}
+
+.botPickDiv{
+	text-align: center;
+	transition: 0.2s;
+    background-color: #44475a;
+    border: 2px solid #ff5555;
+    margin-bottom: 2px;
+}
+
+.botPickDiv:hover{
+	transition: 0.2s;
+    background-color:#282a36;
+    border: 2px solid #ff79c6;
+}
+
+.fakeDiv{
+	height:120px
+}
+
+.botPickResult{
+	text-align: center;
+    background-color: #44475a;
+    border: 2px solid #ff5555;
+	font-size: 35px;
+	height: 200px;
+	margin: 10px;
+}
+
+.result{
+	transition: 0.2s;
+	text-align: center;
+    background-color: #44475a;
+	border: 2px solid #8be9fd;
+	font-size: 20px;
+	height:90px;
+	width:100%;
+	margin-top: 10px;
+	color: #ff5555;
+}
+
+.result:hover{
+	transition: 0.2s;
+    background-color:#282a36;
+	border: 2px solid #ff79c6;
+	color: #8be9fd;
+}
+
+.playAgain{
+	width:500px;
+	transition:0.2s;
+	text-align: center;
+	margin-top: 10px;
+	background-color: #282a36;
+	border: 2px solid #ff5555;
+	cursor: pointer;
+}
+
+.playAgain:hover{
+	transition: 0.2s;
+	background-color:#ff5555 ;
+	border: 2px solid #8be9fd;
+}
+
+.container {
+	text-align: center;
+}
+
+small {
+	font-size: 50%;
+}
