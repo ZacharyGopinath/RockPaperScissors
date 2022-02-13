@@ -1,51 +1,67 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset='utf-8'>
-	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
-	<title>Virtual Rock Paper Scissors</title>
-	<meta name='viewport' content='width=device-width, initial-scale=1'>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-	<link rel='stylesheet' type='text/css' media='screen' href='rpsmain.css'>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Virtual Rock Paper Scissors</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel='stylesheet' type='text/css' media='screen' href='rpsmain.css'>
 </head>
+
 <body>
-	<div class="instructions">
-		<h1 id="insText">Pick Rock, Paper, or Scissors</h1>
-		<center>Created by Skizhu <small>Co-authored by Rohin.</small></center>
-	</div>
-	<div class="container">
-		<div class="pickOptions">
-			<h2 id="rockText">Rock</h2>
-			<h2 id="paperText">Paper</h2>
-			<h2 id="scissorsText">Scissors</h2>
-		</div>
-		<br>
-	</div>
-	<div class="sideS">
-	<div class="leftSide">
-			<div class="yourPickDiv">
-				<h1 id="yourPick">Your Pick: </h1>
-			</div>
-			<div class="pickResult">
-				<h1 id="pickText"></h1>
-			</div>
-		</div>
+  <div class="instructions">
+    <h1 id="insText">Pick Rock, Paper, or Scissors</h1>
+    <div class='contributionDiv'>
+      <p>Created by Zachary Gopinath</p>
+      <p id="r0hinText">Co-authored by Rohin.</p>
+    </div>
+  </div>
+  <div class="container">
+    <div class="pickOptions">
+      <h2 id="rockText">Rock</h2>
+      <h2 id="paperText">Paper</h2>
+      <h2 id="scissorsText">Scissors</h2>
+    </div>
+    <br>
+  </div>
+  <div class="sideS">
+    <div class="leftSide">
+      <div class="yourPickDiv">
+        <h1 id="yourPick">Your Pick: </h1>
+      </div>
+      <div class="pickResult">
+        <h1 id="pickText"></h1>
+      </div>
+    </div>
 
-		<div class="rightSide">
-			<div class="botPickDiv">
-				<h1 id="botPick">Bot's Pick: </h1>
-			</div>
-			<div class="botPickResult">
-				<h1 id="botPickText"></h1>
-			</div>
-		</div>
-		</div>
+    <div class="rightSide">
+      <div class="botPickDiv">
+        <h1 id="botPick">Bot's Pick: </h1>
+      </div>
+      <div class="botPickResult">
+        <h1 id="botPickText"></h1>
+      </div>
+    </div>
+  </div>
 
-	<div class="result">
-		<h1 id="resultText"></h1>
-	</div>
-	<br><br>
+  <div class="result">
+    <h1 id="resultText"></h1>
+  </div>
+  <br><br>
+  <center>
+    <div class="scoreBox">
+      <h2 id="scoreRatio">
+        Your wins: <span class="WinsValue">0</span>
+        <br>
+        Computer wins: <span class="WinsValue" id="computerWins">0</span>
 
-<script src='rpsmain.js'></script>
+      </h2>
+    </div>
+  </center>
+
+  <script src='rpsmain.js'></script>
 </body>
+
 </html>

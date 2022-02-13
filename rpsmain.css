@@ -1,142 +1,165 @@
-body{
+body {
 	background-color: #282a36;
 	font-family: 'Roboto', sans-serif;
-	color:#f5f6fa;
+	color: #f5f6fa;
 }
 
-.instructions{
+* {
+	user-select: none;
+}
+
+.instructions {
 	text-align: center;
 	transition: 0.2s;
-    background-color: #44475a;
-    border: 2px solid #ff5555;
+	background-color: #44475a;
+	border: 2px solid #ff5555;
 	margin-bottom: 2px;
-	color:#8be9fd;
+	color: #8be9fd;
+
 }
 
-.instructions:hover{
+.contributionDiv {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.contributionDiv>p {
+	padding: 0px 2px 0px 2px;
+}
+
+#r0hinText {
+	font-size: medium;
+	color: #ff5555;
+}
+
+.instructions:hover {
 	transition: 0.2s;
-    background-color:#282a36;
-    border: 2px solid #ff79c6;
+	background-color: #282a36;
+	border: 2px solid #ff79c6;
 }
 
-.sideS{
+.sideS {
 	display: grid;
 	grid-template-columns: repeat(2, 50%);
 }
 
-.leftSide{
-	border: 2px solid #ff5555; ;
+.leftSide {
+	border: 2px solid #ff5555;
+	;
 }
 
-.yourPickDiv{
+.yourPickDiv {
 	text-align: center;
 	transition: 0.2s;
-    background-color: #44475a;
-    border: 2px solid #ff5555;
-    margin-bottom: 2px;
+	background-color: #44475a;
+	border: 2px solid #ff5555;
+	margin-bottom: 2px;
 }
 
-.yourPickDiv:hover{
+.yourPickDiv:hover {
 	transition: 0.2s;
-    background-color:#282a36;
-    border: 2px solid #ff79c6;
+	background-color: #282a36;
+	border: 2px solid #ff79c6;
 }
 
-.pickOptions h2{
+.pickOptions h2 {
 	display: inline-block;
 	padding: 24px;
 }
 
 
-#rockText{
+#rockText {
 	text-align: center;
-    background-color: #44475a;
-    border: 2px solid #ff5555;
+	background-color: #44475a;
+	border: 2px solid #ff5555;
 	font-size: 35px;
 	cursor: pointer;
-	
+
 }
 
-#paperText{
-	margin-left:4px;
-	margin-right:4px;
+#paperText {
+	margin-left: 4px;
+	margin-right: 4px;
 	text-align: center;
-    background-color: #44475a;
-    border: 2px solid #ff5555;
-	font-size: 35px;
-	cursor: pointer;
-}
-
-#scissorsText{
-	text-align: center;
-    background-color: #44475a;
-    border: 2px solid #ff5555;
+	background-color: #44475a;
+	border: 2px solid #ff5555;
 	font-size: 35px;
 	cursor: pointer;
 }
 
-.pickResult{
+#scissorsText {
 	text-align: center;
-    background-color: #44475a;
-    border: 2px solid #ff5555;
+	background-color: #44475a;
+	border: 2px solid #ff5555;
+	font-size: 35px;
+	cursor: pointer;
+}
+
+.pickResult {
+	text-align: center;
+	background-color: #44475a;
+	border: 2px solid #ff5555;
 	font-size: 35px;
 	height: 200px;
 	margin: 10px;
 }
 
-.rightSide{
-	border: 2px solid #ff5555; ;
+.rightSide {
+	border: 2px solid #ff5555;
+	;
 }
 
-.botPickDiv{
+.botPickDiv {
 	text-align: center;
 	transition: 0.2s;
-    background-color: #44475a;
-    border: 2px solid #ff5555;
-    margin-bottom: 2px;
+	background-color: #44475a;
+	border: 2px solid #ff5555;
+	margin-bottom: 2px;
 }
 
-.botPickDiv:hover{
+.botPickDiv:hover {
 	transition: 0.2s;
-    background-color:#282a36;
-    border: 2px solid #ff79c6;
+	background-color: #282a36;
+	border: 2px solid #ff79c6;
 }
 
-.fakeDiv{
-	height:120px
+.fakeDiv {
+	height: 120px
 }
 
-.botPickResult{
+.botPickResult {
 	text-align: center;
-    background-color: #44475a;
-    border: 2px solid #ff5555;
+	background-color: #44475a;
+	border: 2px solid #ff5555;
 	font-size: 35px;
 	height: 200px;
 	margin: 10px;
 }
 
-.result{
+.result {
 	transition: 0.2s;
 	text-align: center;
-    background-color: #44475a;
+	background-color: #44475a;
 	border: 2px solid #8be9fd;
 	font-size: 20px;
-	height:90px;
-	width:100%;
+	height: 90px;
+	width: 100%;
 	margin-top: 10px;
 	color: #ff5555;
 }
 
-.result:hover{
+.result:hover {
 	transition: 0.2s;
-    background-color:#282a36;
+	background-color: #282a36;
 	border: 2px solid #ff79c6;
 	color: #8be9fd;
 }
 
-.playAgain{
-	width:500px;
-	transition:0.2s;
+.playAgain {
+	width: 500px;
+	transition: 0.2s;
 	text-align: center;
 	margin-top: 10px;
 	background-color: #282a36;
@@ -144,9 +167,9 @@ body{
 	cursor: pointer;
 }
 
-.playAgain:hover{
+.playAgain:hover {
 	transition: 0.2s;
-	background-color:#ff5555 ;
+	background-color: #ff5555;
 	border: 2px solid #8be9fd;
 }
 
@@ -156,4 +179,14 @@ body{
 
 small {
 	font-size: 50%;
+}
+
+.scoreBox {
+	border: 2px solid #ff5555;
+	text-align: center;
+	width: max(33%, 220px);
+}
+
+.WinsValue {
+	color: #ff5555;
 }
